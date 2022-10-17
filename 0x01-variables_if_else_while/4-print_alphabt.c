@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * main - outputs last alphabet in lowercase with exception of q and e
  * Return: return zero
  */
@@ -9,12 +9,13 @@ int main(void)
 
 	for (i = 0; i  < 'z'; i++)
 	{
-		switch (i)
+		if (i == 'e')
 		{
-			case 'q':
-				continue;
-			case 'e':
-				continue;
+			continue;
+		}
+		else if (i == 'q')
+		{
+			continue;
 		}
 		putchar(i);
 	}
