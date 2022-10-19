@@ -7,7 +7,9 @@
  */
 int _islower(int c)
 {
-	if (c == islower(c))
+	char check = islower(c);
+
+	if (c == check)
 	{
 		return (1);
 	}
