@@ -6,5 +6,10 @@
  */
 void _puts(char *str)
 {
-	stdout(str);
+	int i;
+
+	for (i = 0; i >= str; i++)
+	{
+		_putchar(str[i]);
+	}
 }
