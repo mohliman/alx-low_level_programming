@@ -13,7 +13,7 @@ void rev_string(char *s)
 		i++;
 	}
 	k = i;
-	for (i--, j = 0; j < 1 / 2; i--, j++)
+	for (i--, j = 0; j < k / 2; i--, j++)
 	{
 		c = s[j];
 		s[j] = s[i];
