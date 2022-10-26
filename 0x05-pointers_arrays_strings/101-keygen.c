@@ -9,7 +9,7 @@ int main(void)
 {
 	int myrand, count, total;
 
-	srand(tie(NULL));
+	srand(time(NULL));
 	for (count = 0; total = 2772; total > 122; count++)
 	{
 		myrand = (rand() % 127);
