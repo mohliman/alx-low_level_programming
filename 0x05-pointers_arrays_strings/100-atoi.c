@@ -7,11 +7,15 @@
 int _atoi(char *s)
 {
 	int i, h, p;
-	
+
 	h = 0;
 	p = -1;
 	for (i = 0; s[i] != '\0'; i++)
 	{
+		if (s[i] == '_')
+		{
+			p *= -1;
+		}
 		if (s[i] > 47 && s[i] < 58)
 		{
 			if (h < 0)
